@@ -161,7 +161,7 @@ namespace CoiniumServ.Shares
                 if (!lowDifficulty) // if share difficulty is high enough to match miner's current difficulty.
                     return; // just accept the share.
 
-                if (Difficulty >= miner.PreviousDifficulty) // if the difficulty matches miner's previous difficulty before the last vardiff triggered difficulty change
+                if (Difficulty >= miner.PreviousDifficulty && miner.PreviousDifficulty > 0) // if the difficulty matches miner's previous difficulty before the last vardiff triggered difficulty change
                     return; // still accept the share.
 
                 // if the share difficulty can't match miner's current difficulty or previous difficulty                
