@@ -1,0 +1,29 @@
+{
+    "enabled": true,
+    "coin": "garlicoin.json",
+    "daemon": {
+        "port": 9333,
+        "username": "DAEMON_USERNAME",
+        "password": "DAEMON_PASS"
+    },
+    "wallet": {
+        "address": "DAEMON_WALLET_ADDR"
+    },
+    "rewards": [
+        {
+            "REWARDS_ADDR": 0
+        }
+    ],
+    "stratum": {
+        "port": 3333
+    },
+    "storage": {
+        "hybrid": {
+          "mysql": {
+            "database": "DB_NAME",
+            "username": "DB_USERNAME",
+            "password": "DB_PASS"
+          }
+        }
+    }
+}

@@ -4,13 +4,13 @@
         "timeout": 5
     },
     "meta": {
-        "motd": "Welcome to CoiniumServ pool, enjoy your stay! - http://www.coiniumserv.com",
-        "txMessage": "http://www.coiniumserv.com/"
+        "motd": "WELCOME_MESSAGE_HERE",
+        "txMessage": "TX_MESSAGE_HERE"
     },
     "payments": {
         "enabled": true,
         "interval": 60,
-        "minimum": 0.01
+        "minimum": 0.005
     },
     "miner": {
         "validateUsername": true,
@@ -26,7 +26,7 @@
         "diff": 16,
         "vardiff": {
             "enabled": true,
-            "minDiff": 8,
+            "minDiff": 4,
             "maxDiff": 512,
             "targetTime": 15,
             "retargetTime": 90,
@@ -52,8 +52,8 @@
             "mysql": {
                 "host": "127.0.0.1",
                 "port": 3306,
-                "user": "username",
-                "password": "password"
+                "user": "DB_USER",
+                "password": "DB_PASS"
             }
         },
         "mpos": {
@@ -61,8 +61,9 @@
             "mysql": {
                 "host": "127.0.0.1",
                 "port": 3306,
-                "user": "username",
-                "password": "password"
+                "user": "DB_USER",
+                "password": "DB_PASS",
+                "database": "DB_NAME"
             }
         }
     }

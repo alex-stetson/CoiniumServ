@@ -1,10 +1,10 @@
 {
     "stack": {
-        "name": "CoiniumServ.com",
+        "name": "YOUR_WEBSITE_NAME",
         "nodes": [
             {
-                "location": "eu",
-                "address": "127.0.0.1",
+                "location": "us",
+                "address": "pool.example.com",
                 "default": true
             }
         ]
@@ -15,7 +15,7 @@
     },
     "website": {
         "enabled": true,
-        "bind": "",
+        "bind": "pool.example.com",
         "port": 80,
         "template": "default",
         "feed": "",
@@ -51,4 +51,4 @@
             }
         ]
     }
-} 
+}
